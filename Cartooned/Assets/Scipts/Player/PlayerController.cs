@@ -39,8 +39,11 @@ public class PlayerController : MonoBehaviour
     [Header("Shooting")]
     public bool canShoot;
     public GameObject Bullet;
+    public Rigidbody bulletRigidbody;
+    public float bulletSpeed;
     public Transform gunHoldPt;
-
+    public Transform firePt;
+    
     private Rigidbody rb;
     private Vector2 moveInput;
     private float cameraPitch;
@@ -67,6 +70,7 @@ public class PlayerController : MonoBehaviour
         moveAction.action.Enable();
         lookAction.action.Enable();
         jumpAction.action.Enable();
+        shootAction.action.Enable();
         jumpAction.action.performed += OnJumpPerformed;
         shootAction.action.performed += OnShootPerformed;
         if (sprintAction != null) sprintAction.action.Enable();
@@ -80,6 +84,7 @@ public class PlayerController : MonoBehaviour
         moveAction.action.Disable();
         lookAction.action.Disable();
         jumpAction.action.Disable();
+        shootAction.action.Disable();
         if (sprintAction != null) sprintAction.action.Disable();
     }
 
@@ -110,7 +115,13 @@ public class PlayerController : MonoBehaviour
 
     public void OnShootPerformed(InputAction.CallbackContext context) 
     {
-        Debug.Log("Shoot");
+        if(canShoot) 
+        {
+            Debug.Log("Shoot");
+            Instantiate(Bullet, firePt.position, cameraTransform.rotation);
+            //bulletRigidbody.AddForce(transform.forward * bulletSpeed * Time.deltaTime, ForceMode.Acceleration);
+            
+        }
     }
 
     private void HandleMovement()

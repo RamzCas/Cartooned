@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
         if(canShoot) 
         {
             Debug.Log("Shoot");
-            Instantiate(Bullet, firePt.position, cameraTransform.rotation);
+            Instantiate(Bullet, firePt.transform.position, firePt.rotation);
             //bulletRigidbody.AddForce(transform.forward * bulletSpeed * Time.deltaTime, ForceMode.Acceleration);
             
         }

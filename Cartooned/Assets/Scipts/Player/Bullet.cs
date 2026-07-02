@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print("HIT");
-        //Destroy(this.gameObject);
+        Destroy(this.gameObject);
     }
 
 }

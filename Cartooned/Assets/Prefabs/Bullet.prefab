@@ -132,9 +132,6 @@ MonoBehaviour:
   randomNumber: 0
   max: 0
   min: 0
-  mask:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!1 &3463993477622777005
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,4 +286,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df58be4f19461974e85a5e2cac3cfdea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  bulletSpeed: 10
+  bulletSpeed: 30

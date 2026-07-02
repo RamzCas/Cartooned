@@ -39,9 +39,9 @@ public class PlayerController : MonoBehaviour
     [Header("Shooting")]
     public bool canShoot;
     public GameObject Bullet;
-    public Rigidbody bulletRigidbody;
-    public float bulletSpeed;
-    public Transform gunHoldPt;
+    //public Rigidbody bulletRigidbody;
+    //public float bulletSpeed;
+    //public Transform gunHoldPt;
     public Transform firePt;
     
     private Rigidbody rb;

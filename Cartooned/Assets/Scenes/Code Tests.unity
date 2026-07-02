@@ -33670,6 +33670,11 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!4 &1386660157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8434363406030274395, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+  m_PrefabInstance: {fileID: 1954780130010583459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1398677715
 GameObject:
   m_ObjectHideFlags: 0
@@ -49422,6 +49427,11 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!4 &1966490571 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 835128266686559561, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+  m_PrefabInstance: {fileID: 1954780130010583459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1966517513
 Mesh:
   m_ObjectHideFlags: 0
@@ -54101,6 +54111,42 @@ PrefabInstance:
     - target: {fileID: 8733889178498768803, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: jumpAction
+      value: 
+      objectReference: {fileID: -8632622766225388199, guid: 5fd1c8f2dec14ce4285d7b59c3edccd9, type: 3}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: lookAction
+      value: 
+      objectReference: {fileID: -7514582355572787084, guid: 5fd1c8f2dec14ce4285d7b59c3edccd9, type: 3}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: moveAction
+      value: 
+      objectReference: {fileID: 3171472343611897613, guid: 5fd1c8f2dec14ce4285d7b59c3edccd9, type: 3}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 1386660157}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: acceleration
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: sprintAction
+      value: 
+      objectReference: {fileID: 5749074700465165865, guid: 5fd1c8f2dec14ce4285d7b59c3edccd9, type: 3}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1966490571}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: mouseSensitivity
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8948008509913687688, guid: b3b0c2aaeb6642f4e8bc1aff67f1b7a3, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
